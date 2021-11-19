@@ -1,0 +1,26 @@
+.analyse-container {
+    width: 100%;
+    background: rgba(245, 246, 247, 1);
+
+}
+
+.header {
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 50px;
+}
+.logo-container .logo {
+    width: 250px;
+}
+.content-container {
+    padding-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px 40px;
+    
+}
+.content-container .one {
+    grid-column: 1 span;
+    grid-row: 3 span;
+}

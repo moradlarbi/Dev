@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    padding-left: 75px;
+    padding-top: 50px;
+}
+.logo-container .logo {
+    width: 250px;
+}
+
+.logol-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.logol{
+    width: 100px;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+}
