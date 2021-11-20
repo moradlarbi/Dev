@@ -10,7 +10,7 @@ const Status = ({logo,label,pourcentage}) => {
                 <li>{pourcentage}% probability of crisis</li>
             </ul>
             <button className="btn">
-                <a href="#">
+                <a href="../more">
                     More details
                 </a>
             </button>

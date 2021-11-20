@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../styles/app.css";
 import "../styles/home.css";
 import Header from "./Header";
@@ -11,8 +11,11 @@ export default function Home() {
     const { name, value } = e.target;
     setSearch(value);
   };
+  useEffect(()=>{
+    console.log(keyWords[0])
+  })
   return (
-    <div>
+    <div className="home-container">
       <Header />
       <div>
         <img src={background} alt="blue-back" className="background"></img>
@@ -24,21 +27,25 @@ export default function Home() {
         </div>
         <div className="search-container">
           <div className="add">
-            <input type="text" className="search" value={search} onChange={handleChange} name="search" />
+            <input type="text" placeholder="search key/ hashtag" className="search" value={search} onChange={handleChange} name="search" autoComplete="off" />
             <button className="add-btn" onClick={()=> {
               setKeyWords([...keyWords,search])
             }}>+</button>
           </div>
-          <div className="keyWords">
-                {
-                    keyWords.map((n) => {
-                        return <div className="keyWord">{n}</div>
-                    })
-                }
-            <button className="go-btn">
-              Go
-            </button>
-          </div>
+          {
+            keyWords[0] !== undefined && <div className="keyWords">
+              <div className="keyWords-container">
+              {
+                keyWords.map((n) => {
+                    return <div className="keyWord">{n}</div>
+                })
+              }
+              </div>
+              <button className="go-btn">
+                <a href="analyse">Go</a>
+              </button>
+            </div>
+          }
         </div>
       </div>
       

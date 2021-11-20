@@ -25,6 +25,8 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px 40px;
+    position: relative;
+    z-index: 5;
     
 }
 .content-container .one {
