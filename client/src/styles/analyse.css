@@ -1,9 +1,16 @@
 .analyse-container {
     width: 100%;
     background: rgba(245, 246, 247, 1);
-
+    position: relative;
+    z-index: 1;
 }
-
+.background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    z-index: 10;
+}
 .header {
     width: 100%;
     padding-left: 75px;

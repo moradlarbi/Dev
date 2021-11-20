@@ -7,6 +7,8 @@ import Card from './Card'
 import Graph from './Graph'
 import Status from './Status'
 import valid from "../assets/valid.png"
+import Header from './Header'
+import background from "../assets/bg.svg"
 const Analyse = () => {
     const [infos, setInfos] = useState(["67.3%","9.4k"])
     const [colors, setColors] = useState(["rgba(78, 203, 113, 1)","rgba(85, 173, 238, 1)"])
@@ -14,11 +16,10 @@ const Analyse = () => {
     const [pourcentage, setPourcentage] = useState("9")
     return (
         <div className="analyse-container">
-            <div className="header">
-                <div className="logo-container">
-                    <img src={logo} alt="logo" className="logo"></img>
-                </div>
+            <div>
+                <img src={background} alt="blue-back" className="background"></img>
             </div>
+            <Header />
             <div className="content-container">
                 <div className="one"></div>
                 <Card text="Weekly Average tweets" clas="happy" logo={happy} info={infos[0]} color={colors[0]} />

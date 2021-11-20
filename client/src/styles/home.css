@@ -10,9 +10,8 @@
 .logol-container{
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 .logol{
@@ -24,4 +23,5 @@
     top: 0;
     right: 0;
     width: 45%;
+    z-index: -1;
 }
